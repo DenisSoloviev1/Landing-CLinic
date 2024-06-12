@@ -1,0 +1,28 @@
+@import "../../shared/Colors.scss";
+
+nav {
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  color: #c0c0c0;
+
+  svg {
+    fill: $color-light-gray;
+    width: 34px;
+  }
+  #right {
+    transform: rotate(180deg);
+  }
+  a {
+    color: $color-gray;
+  }
+  a:hover {
+    svg {
+      fill: $color-green-button;
+    }
+  }
+}

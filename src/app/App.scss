@@ -6,7 +6,29 @@
     format("truetype");
 }
 
-::-webkit-scrollbar{
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: 0;
+  padding: 0;
+}
+button:focus,
+button:active {
+  outline: none;
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar {
   width: 0;
 }
 
@@ -21,16 +43,4 @@ body {
   height: 100%;
   background-color: $color-white;
   color: $color-black;
-}
-a {
-  text-decoration: none;
-}
-button {
-  border: 0;
-  padding: 0;
-}
-button:focus,
-button:focus {
-  outline: none;
-  cursor: pointer;
 }

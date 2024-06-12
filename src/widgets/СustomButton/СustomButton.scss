@@ -1,0 +1,38 @@
+@import "../../shared/Colors.scss";
+
+#customButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  border-radius: 3rem;
+  padding: 10px;
+}
+
+.green,
+.green-and-white:hover,
+.green-and-white:active,
+// .green-and-white:focus,
+.white:hover,
+.white:active {
+  border: 1px solid $color-green-button;
+  background-color: $color-green-button;
+  color: $color-white;
+}
+.green:hover,
+.green:active {
+  background-color: $color-green-button-effect;
+}
+
+.green-and-white {
+  border: 1px solid $color-green-button;
+  color: $color-green-button;
+  background-color: $color-green-section;
+}
+
+.white {
+  border: 1px solid $color-white-header;
+  background-color: $color-white-header;
+  color: $color-green;
+  font-weight: 700;
+}

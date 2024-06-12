@@ -7,7 +7,7 @@ header {
   box-sizing: border-box;
   padding: 15px 20px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   background-color: $color-white-header;
 
@@ -30,13 +30,31 @@ header {
   }
 
   h1{
+    font-size: 18px;
     color: $color-green-button;
+  }
+
+  .info{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    margin-left: 5%;
+
+    p{
+      font-size: 13px;
+    }
   }
 }
 
 @media screen and (min-width: 426px) {
   header {
     background-color: $color-white;
+
+    h1{
+      font-size: 28px;
+    }
 
     button {
       background-color: $color-white;
