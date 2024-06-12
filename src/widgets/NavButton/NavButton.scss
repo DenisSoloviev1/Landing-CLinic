@@ -1,8 +1,8 @@
 @import "../../shared/Colors.scss";
 
-nav {
+.container {
   width: 50%;
-  margin: 20px;
+  margin: 20px 20px 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -24,5 +24,11 @@ nav {
     svg {
       fill: $color-green-button;
     }
+  }
+  div{
+    display: flex;
+  }
+  p{
+    color: $color-black;
   }
 }

@@ -2,9 +2,9 @@ import React from "react";
 import "./NavButton.scss";
 import { NavLink } from "react-router-dom";
 
-export default function NavButton({actualCard, allCard}) {
+export default function NavButton({ actualCard, allCards }) {
   return (
-    <nav>
+    <div className="container">
       <NavLink>
         <svg viewBox="0 0 512 512">
           <g>
@@ -14,7 +14,9 @@ export default function NavButton({actualCard, allCard}) {
           </g>
         </svg>
       </NavLink>
-      {actualCard}/{allCard}
+      <div>
+        <p>{actualCard}</p>/{allCards}
+      </div>
       <NavLink>
         <svg viewBox="0 0 512 512" id="right">
           <g>
@@ -24,6 +26,6 @@ export default function NavButton({actualCard, allCard}) {
           </g>
         </svg>
       </NavLink>
-    </nav>
+    </div>
   );
 }

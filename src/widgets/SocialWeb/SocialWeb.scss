@@ -1,0 +1,24 @@
+@import "../../shared/Colors.scss";
+
+.social-web {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  a {
+    display: flex;
+  }
+  img {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .social-web {
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}

@@ -21,7 +21,7 @@ export default function Landing() {
           </div>
         </section>
         <Card/>
-        <NavButton actualCard={"1"} allCard={"4"}/>
+        <NavButton actualCard={"1"} allCards={"4"}/>
       </main>
       <Footer />
     </>

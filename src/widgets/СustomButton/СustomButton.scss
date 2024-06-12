@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 140px;
+  width: 50%;
   border-radius: 3rem;
   padding: 10px;
 }
@@ -12,7 +12,6 @@
 .green,
 .green-and-white:hover,
 .green-and-white:active,
-// .green-and-white:focus,
 .white:hover,
 .white:active {
   border: 1px solid $color-green-button;

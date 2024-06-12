@@ -20,11 +20,11 @@ a {
 button {
   border: 0;
   padding: 0;
+  cursor: pointer;
 }
 button:focus,
 button:active {
   outline: none;
-  cursor: pointer;
 }
 
 

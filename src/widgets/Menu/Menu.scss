@@ -1,0 +1,25 @@
+@import "../../shared/Colors.scss";
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+
+  a{
+    color: $color-white;
+    font-size: 14px;
+}
+a:hover, a:active{
+    color: $color-green-button-effect;
+}
+}
+
+@media screen and (min-width: 769px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+  }
+}
