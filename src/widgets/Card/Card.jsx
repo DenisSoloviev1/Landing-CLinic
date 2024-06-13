@@ -1,6 +1,6 @@
 import React from "react";
 import "./Card.scss";
-import СustomButton from "../СustomButton/СustomButton.jsx";
+import СustomButton from "../Buttons/СustomButton/СustomButton.jsx";
 
 export default function Card() {
   return (
@@ -8,7 +8,7 @@ export default function Card() {
       <img src="/images/doctor-working-table.jpg" alt="doctor working table" />
       <div className="info">
         <div className="service">
-          <h2>CHECK-UP</h2>
+          <h1>CHECK-UP</h1>
           <h4>для мужчин</h4>
           <ul>
             <li>Гормональный скрининг</li>

@@ -7,9 +7,9 @@ export default function Footer() {
   return (
     <footer>
       <h2>
-        LOGO <SocialWeb />
+        LOGO <Menu />
       </h2>
-      <Menu />
+      <SocialWeb />
     </footer>
   );
 }

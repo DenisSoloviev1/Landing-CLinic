@@ -1,11 +1,7 @@
-@import "../../shared/Colors.scss";
+@import "../../shared/Variabiles.scss";
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
+  
 
   img {
     width: 100%;
@@ -20,16 +16,24 @@ main {
     background-color: $color-white-section;
     padding-top: 10%;
 
-    .wrap{
+    .wrap {
       margin: 40px 20px;
 
       h1 {
-        font-size: 26px;
+        @include adaptiv-font(36, 26);
       }
       p {
         margin-top: 10px;
-        font-size: 14px;
+        @include adaptiv-font(16, 14);
       }
     }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 }

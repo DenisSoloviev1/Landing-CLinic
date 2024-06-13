@@ -1,4 +1,4 @@
-@import "../../shared/Colors.scss";
+@import "../../shared/Variabiles.scss";
 
 nav {
   display: flex;
@@ -6,13 +6,14 @@ nav {
   gap: 15px;
   margin-top: 30px;
 
-  a{
+  a {
     color: $color-white;
-    font-size: 14px;
-}
-a:hover, a:active{
+    @include adaptiv-font(16, 14);
+  }
+  a:hover,
+  a:active {
     color: $color-green-button-effect;
-}
+  }
 }
 
 @media screen and (min-width: 769px) {
@@ -20,6 +21,6 @@ a:hover, a:active{
     display: flex;
     flex-direction: row;
     gap: 30px;
-
+    margin-top: 0;
   }
 }

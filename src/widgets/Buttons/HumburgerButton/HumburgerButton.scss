@@ -1,0 +1,21 @@
+@import "../../../shared/Variabiles.scss";
+
+button {
+  height: auto;
+  min-height: 23px;
+  max-height: 29px;
+  background-color: $color-white-header;
+
+  svg {
+    fill: $color-green-button;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+button:hover,
+button:active {
+  svg {
+    fill: $color-green-button-effect;
+  }
+}
