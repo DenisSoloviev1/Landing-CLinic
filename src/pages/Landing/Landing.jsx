@@ -11,19 +11,21 @@ import CustomButton from "../../widgets/Buttons/СustomButton/СustomButton.jsx"
 import Navigation from "../../widgets/Navigation/Navigation.jsx";
 
 export default function Landing() {
-  const [showModal, setShowModal] = useState(false);
-  const toggleModal = () => setShowModal(!showModal);
+  //menu
+  const [showMenu, setShowMenu] = useState(false);
+  const toggleMenu = () => setShowMenu(!showMenu);
+ 
 
   return (
     <>
       <Header
         children={
-          <HumburgerButton showModal={showModal} toggleModal={toggleModal} />
+          <HumburgerButton showMenu={showMenu} toggleMenu={toggleMenu} />
         }
       />
-      <Menu show={showModal} handleClose={toggleModal}>
+      <Menu show={showMenu} handleClose={toggleMenu}>
         <Navigation />
-        <CustomButton text={"Записаться на прием"} className={"white"} />
+        <CustomButton text={"Записаться на прием"} className={"white"}/>
       </Menu>
       <Main>
         <section>
@@ -39,7 +41,7 @@ export default function Landing() {
         <Card />
         <NavButton actualCard={"1"} allCards={"4"} />
       </Main>
-      
+
       <Footer />
     </>
   );

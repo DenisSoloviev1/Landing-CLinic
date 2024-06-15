@@ -1,10 +1,10 @@
 import React from "react";
 import "./HumburgerButton.scss";
 
-export default function HumburgerButton({ showModal, toggleModal }) {
+export default function HumburgerButton({ showMenu, toggleMenu }) {
   return (
-    <button onClick={toggleModal}>
-      {showModal ? (
+    <button onClick={toggleMenu} id="humburgerButton">
+      {showMenu ? (
         <svg viewBox="0 0 325.438 325.438">
           <g>
             <g>

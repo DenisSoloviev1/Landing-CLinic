@@ -3,6 +3,7 @@
 header {
   #customButton {
     display: none;
+    height: 43px;
   }
 }
 #customButton {
@@ -12,7 +13,6 @@ header {
   width: 50%;
   height: 43px;
   border-radius: 3rem;
-  padding: 10px;
 }
 
 .green,
@@ -45,6 +45,7 @@ header {
 @media screen and (max-width: 320px) {
   #customButton {
     width: 55%;
+    padding: 0 10px;
   }
 }
 

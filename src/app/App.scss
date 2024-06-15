@@ -17,16 +17,18 @@ p {
 a {
   text-decoration: none;
 }
+button,
+input,
+textarea {
+  all: unset;
+}
 button {
-  border: 0;
-  padding: 0;
   cursor: pointer;
 }
 button:focus,
 button:active {
   outline: none;
 }
-
 
 ::-webkit-scrollbar {
   width: 0;

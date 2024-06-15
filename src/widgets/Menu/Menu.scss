@@ -1,6 +1,6 @@
 @import "../../shared/Variabiles.scss";
 
-.modal {
+.menu {
   display: none;
   position: fixed;
   z-index: 1;
@@ -13,7 +13,7 @@
   font-size: 16px;
 }
 
-.modal.show {
+.menu.show {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -23,7 +23,7 @@
 }
 
 @media screen and (min-width: 769px) {
-  .modal {
+  .menu {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -39,7 +39,7 @@
 }
 
 @media screen and (min-width: 1450px) {
-  .modal {
+  .menu {
     padding: 0 20%;
   }
 }
