@@ -6,7 +6,7 @@ export default function Card() {
   return (
     <div className="card">
       <img src="/images/doctor-working-table.jpg" alt="doctor working table" />
-      <div className="info">
+      <div className="bio">
         <div className="service">
           <h1>CHECK-UP</h1>
           <h4>для мужчин</h4>

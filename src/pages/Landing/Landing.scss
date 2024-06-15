@@ -1,8 +1,6 @@
 @import "../../shared/Variabiles.scss";
 
 main {
-  
-
   img {
     width: 100%;
     min-height: 288px;
@@ -14,7 +12,6 @@ main {
     width: 100%;
     box-sizing: border-box;
     background-color: $color-white-section;
-    padding-top: 10%;
 
     .wrap {
       margin: 40px 20px;
@@ -31,9 +28,32 @@ main {
 }
 
 @media screen and (min-width: 769px) {
-  section {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  main {
+    section {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+
+      img {
+        width: calc(50% - 20px);
+      }
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 8.5% 0 10%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  main {
+    section {
+      .wrap {
+        margin: 0 8.5% 0 20%;
+      }
+    }
   }
 }

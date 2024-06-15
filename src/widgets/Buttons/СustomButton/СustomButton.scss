@@ -1,10 +1,16 @@
 @import "../../../shared/Variabiles.scss";
 
+header {
+  #customButton {
+    display: none;
+  }
+}
 #customButton {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
+  height: 43px;
   border-radius: 3rem;
   padding: 10px;
 }
@@ -34,4 +40,23 @@
   background-color: $color-white-header;
   color: $color-green;
   font-weight: 700;
+}
+
+@media screen and (max-width: 320px) {
+  #customButton {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  header {
+    #customButton {
+      display: flex;
+      width: 196px;
+    }
+  }
+
+  #customButton {
+    width: 196px;
+  }
 }

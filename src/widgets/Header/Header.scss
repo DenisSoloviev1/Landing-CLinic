@@ -8,45 +8,66 @@ header {
   box-sizing: border-box;
   padding: 15px 20px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: $color-white-header;
 
-  button {
-    height: 100%;
-    min-width: 23px;
-    min-height: 23px;
-    background-color: $color-white-header;
-
-    svg {
-      fill: $color-green-button;
-      width: 100%;
-      height: 100%;
-    }
+  #laptop {
+    display: none;
   }
 
-  button:hover,
-  button:active {
-    svg {
-      fill: $color-green-button-effect;
-    }
-  }
-
-  h1 {
-    @include adaptiv-font(27, 24);
-    color: $color-green-button;
-  }
-
-  .info {
-    height: 100%;
+  section {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    margin-left: 5%;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 
+    h1 {
+      @include adaptiv-font(27, 24);
+      color: $color-green-button;
+    }
     p {
       font-size: 14px;
+    }
+
+    .contact {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+      margin-left: 5%;
+
+      h4 {
+        display: flex;
+      }
+    }
+
+    .address {
+      display: none;
+
+      P {
+        display: flex;
+        align-items: center;
+      }
+      svg {
+        height: 20px;
+        fill: $color-light-gray;
+      }
+      #street {
+        padding-left: 20px;
+        color: $color-gray;
+      }
+    }
+
+    .whatsApp {
+      display: none;
+
+      img {
+        width: 28px;
+      }
+
+      p {
+        font-size: 16px;
+      }
     }
   }
 }
@@ -54,9 +75,39 @@ header {
 @media screen and (min-width: 769px) {
   header {
     background-color: $color-white;
+    padding: 15px 10%;
 
-    button {
-      background-color: $color-white;
+    #laptop {
+      display: flex;
+      justify-content: end;
+      width: 65%;
     }
+
+    section {
+      justify-content: start;
+      width: 35%;
+      gap: 5%;
+
+      .contact {
+        display: none;
+      }
+
+      .address {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .whatsApp {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  header {
+    padding: 15px 20%;
   }
 }

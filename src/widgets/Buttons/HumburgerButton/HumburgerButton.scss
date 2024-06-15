@@ -1,9 +1,9 @@
 @import "../../../shared/Variabiles.scss";
 
 button {
-  height: auto;
+  height: 80%;
   min-height: 23px;
-  max-height: 29px;
+  min-width: 23px;
   background-color: $color-white-header;
 
   svg {
@@ -17,5 +17,11 @@ button:hover,
 button:active {
   svg {
     fill: $color-green-button-effect;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  button {
+    display: none;
   }
 }

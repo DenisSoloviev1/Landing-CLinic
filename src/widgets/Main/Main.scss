@@ -1,7 +1,14 @@
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-}  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 10vh;
+}
+
+@media screen and (min-width: 769px) {
+  main {
+    padding-top: 15vh;
+  }
+}

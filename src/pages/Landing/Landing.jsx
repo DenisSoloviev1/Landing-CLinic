@@ -5,10 +5,10 @@ import Main from "../../widgets/Main/Main.jsx";
 import Footer from "../../widgets/Footer/Footer.jsx";
 import Card from "../../widgets/Card/Card.jsx";
 import NavButton from "../../widgets/Buttons/NavButton/NavButton.jsx";
-import Modal from "../../widgets/Modal/Modal.jsx";
+import Menu from "../../widgets/Menu/Menu.jsx";
 import HumburgerButton from "../../widgets/Buttons/HumburgerButton/HumburgerButton.jsx";
 import CustomButton from "../../widgets/Buttons/СustomButton/СustomButton.jsx";
-import Menu from "../../widgets/Menu/Menu.jsx";
+import Navigation from "../../widgets/Navigation/Navigation.jsx";
 
 export default function Landing() {
   const [showModal, setShowModal] = useState(false);
@@ -21,6 +21,10 @@ export default function Landing() {
           <HumburgerButton showModal={showModal} toggleModal={toggleModal} />
         }
       />
+      <Menu show={showModal} handleClose={toggleModal}>
+        <Navigation />
+        <CustomButton text={"Записаться на прием"} className={"white"} />
+      </Menu>
       <Main>
         <section>
           <img src="/images/image.png" alt="кабинет врача" />
@@ -35,10 +39,7 @@ export default function Landing() {
         <Card />
         <NavButton actualCard={"1"} allCards={"4"} />
       </Main>
-      <Modal show={showModal} handleClose={toggleModal}>
-        <Menu />
-        <CustomButton text={"Записаться на прием"} className={"white"} />
-      </Modal>
+      
       <Footer />
     </>
   );

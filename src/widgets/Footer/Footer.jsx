@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import Menu from "../Menu/Menu.jsx";
+import Menu from "../Navigation/Navigation.jsx";
 import SocialWeb from "../SocialWeb/SocialWeb.jsx";
 
 export default function Footer() {

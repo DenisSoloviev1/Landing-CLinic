@@ -1,15 +1,10 @@
-import React from "react";
-import "./Menu.scss";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import './Menu.scss';
 
-export default function Menu(){
-    return(
-        <nav>
-            <NavLink>О клинике</NavLink>
-            <NavLink>Услуги</NavLink>
-            <NavLink>Специалисты</NavLink>
-            <NavLink>Цены</NavLink>
-            <NavLink>Контакты</NavLink>
-        </nav>
-    );
-}
+export default function Menu ({ show, handleClose, children }) {
+  return (
+    <div className={`modal ${show ? 'show' : ''}`}>
+        {children}
+    </div>
+  );
+};
